@@ -1,0 +1,20 @@
+#Write a program that calculates the count of words and spaces present in the file.
+#The program should ask the user to provide the file path, read the file and give the following counts.
+#The program should give the following counts:
+#1. Total number of words
+#2. Total number of duplicate words
+#3. Total number of special characters
+#4. Total number of spaces
+#The program should handle any kind of error and give appropriate messages.
+#The program should not use any external library to perform the task
+
+ALGORITHM:
+step-1:start
+step-2:Define a file
+step-3:Create one variable to hold the file path and initialize one variable to hold the total count of words and assumed it as 0
+step-4:open the file in read only mode.Based on the number of words and number of spaces we can calculate total number of words
+step-5:convert the string into string split form,to used to find duplicate words we may use two loops.outer lopp will select a word and initialize count to 1 similarly inner loop will compare the word selected by outer loop with rest of words
+step-6:If a match found,then increment the count by 1 and set of duplicates of word to 0,on this we can find the rotal number of duplicate words
+step-7:To find  the special characters we create a function count count_special_character which will count the occurance of special characters in a particular string.we create a variable special_char and initialize it to 0.This variable special_char is used as a counter,whenever there is an occurance of a special character this counter incremented by one
+step-8:By reading file,we can find number of spaces
+step-9:stop
